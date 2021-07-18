@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.main {
+  position: absolute;
+  background-color: #254768;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 450px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+table {
+  margin: auto auto;
+  text-align: center;
+  height: 450px;
+  width: 345px;
+  box-sizing: border-box;
+}
+table thead th .displayArea {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 2px solid white;
+  width: 346px;
+  height: 85px;
+  background-color: #ffffff;
+  font-size: 30px;
+  text-align: right;
+  vertical-align: middle;
+  padding-top: 18px;
+  padding-right: 20px;
+  overflow: scroll;
+}
+table tbody tr td {
+  color: #fff;
+  background: #254768;
+  font-size: 20px;
+  height: 60px;
+  width: 50px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 6px;
+}
+table tbody tr td:hover {
+  cursor: pointer;
+  background: #66a6e6;
+  transition-duration: 0.3s;
+}
+.operators:hover {
+  background-color: #356dd4;
+}
+table tbody .historyTr td {
+  height: 40px;
+}
+
+table tbody .historyTr td:hover {
+  background-color: #254768;
+}
+
+table tbody .historyTr td button {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  background-color: rgba(102, 148, 209, 0.226);
+  color: #33d4d6;
+  border: 1px solid #33d4d6;
+  width: 310px;
+  text-align: center;
+  height: 34px;
+  border-radius: 14px;
+  font-size: 16px;
+  transition-duration: 0.6s;
+}
+table tbody .historyTr td button:hover {
+  background-color: #33d4d6;
+  color: whitesmoke;
+  cursor: pointer;
+}
+#clearHistory {
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: 6px;
+  width: 100px;
+  background-color: #f1ae9a;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    width: 320px;
+  }
+  table {
+    width: 315px;
+  }
+  table thead th .displayArea {
+    width: 315px;
+  }
+  table tbody .historyTr td button {
+    width: 290px;
+  }
+}

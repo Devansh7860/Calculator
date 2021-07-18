@@ -146,7 +146,7 @@ let showHistory = () => {
     }
   displayArea.style.height = "85px";
   displayArea.style.transitionDuration = "0s";
-  displayArea.innerText = ""
+  displayArea.innerText = inputArr.join('')
   historyBtn.innerText = "Show History ..."
 
   historyBtn.removeEventListener('click' , hideHistory )
